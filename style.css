@@ -1,0 +1,45 @@
+:root{
+  --bg:#0b1020;
+  --card:#ffffff;
+  --accent:#f0a500;
+  --muted:#cfd8e3;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,#071022 0%, #0c1530 100%);
+  color:var(--muted);
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+header{padding:16px;text-align:center}
+.subtitle{margin:4px 0 0;font-size:0.9rem; color:#98a6bf}
+main{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px;padding:8px}
+#hud{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:6px}
+#table{
+  background:linear-gradient(180deg, rgba(10,60,30,0.3), rgba(5,20,40,0.6));
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  max-width:98%;
+  height:auto;
+  touch-action: manipulation;
+}
+#controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+button{
+  background:var(--accent);
+  color:#041226;
+  border:none;
+  padding:10px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+button:active{transform:translateY(1px)}
+#log{max-width:1000px;padding:8px;color:#d9e6ff;font-size:0.9rem}
+footer{padding:8px;text-align:center;font-size:0.8rem;color:#8f9fb8}
+@media (max-width:700px){
+  #table{height:360px}
+}
