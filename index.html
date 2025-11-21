@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Balatro-style Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Balatro-style Prototype</h1>
+    <p class="subtitle">Play poker hands, score chips. Face cards are shapes!</p>
+  </header>
+
+  <main>
+    <div id="hud">
+      <div>Round target: <span id="target">100</span></div>
+      <div>Chips: <span id="chips">0</span></div>
+      <div>Hands left: <span id="handsLeft">3</span></div>
+      <div>Discards left: <span id="discardsLeft">2</span></div>
+    </div>
+
+    <canvas id="table" width="1200" height="480"></canvas>
+
+    <div id="controls">
+      <button id="dealBtn">Deal</button>
+      <button id="discardBtn">Discard Selected</button>
+      <button id="playBtn">Play Hand</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div id="log"></div>
+  </main>
+
+  <footer>
+    <small>Prototype — tap cards to hold/unhold. Works on iPhone/iPad/Laptop.</small>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
